@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DE20F21-526F-45DF-B711-2A36325EB614}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nike</RootNamespace>
+    <AssemblyName>Nike</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.SpeechLib, Version=5.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.SpeechLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Browsefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browsefrm.Designer.cs">
+      <DependentUpon>Browsefrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classifyfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classifyfrm.Designer.cs">
+      <DependentUpon>Classifyfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Collect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collect.Designer.cs">
+      <DependentUpon>Collect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBHellper.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mainsfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainsfrm.Designer.cs">
+      <DependentUpon>Mainsfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nike.Designer.cs">
+      <DependentUpon>nike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Putfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Putfrm.Designer.cs">
+      <DependentUpon>Putfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salaryfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salaryfrm.Designer.cs">
+      <DependentUpon>Salaryfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Salesfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salesfrm.Designer.cs">
+      <DependentUpon>Salesfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staffrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staffrm.Designer.cs">
+      <DependentUpon>Staffrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stsyemfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stsyemfrm.Designer.cs">
+      <DependentUpon>Stsyemfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tgoodsfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tgoodsfrm.Designer.cs">
+      <DependentUpon>Tgoodsfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePwdfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePwdfrm.Designer.cs">
+      <DependentUpon>UpdatePwdfrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Browsefrm.resx">
+      <DependentUpon>Browsefrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classifyfrm.resx">
+      <DependentUpon>Classifyfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Collect.resx">
+      <DependentUpon>Collect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainsfrm.resx">
+      <DependentUpon>Mainsfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nike.resx">
+      <DependentUpon>nike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Putfrm.resx">
+      <DependentUpon>Putfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salaryfrm.resx">
+      <DependentUpon>Salaryfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salesfrm.resx">
+      <DependentUpon>Salesfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staffrm.resx">
+      <DependentUpon>Staffrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stsyemfrm.resx">
+      <DependentUpon>Stsyemfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tgoodsfrm.resx">
+      <DependentUpon>Tgoodsfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePwdfrm.resx">
+      <DependentUpon>UpdatePwdfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\01.jpg" />
+    <Content Include="Resources\02.jpg" />
+    <Content Include="Resources\03.jpg" />
+    <Content Include="Resources\04.jpg" />
+    <Content Include="Resources\05.jpg" />
+    <Content Include="Resources\06.jpg" />
+    <Content Include="Resources\07.jpg" />
+    <Content Include="Resources\09.jpg" />
+    <Content Include="Resources\10.jpg" />
+    <Content Include="Resources\144-2-1440x900.jpg" />
+    <Content Include="Resources\1_2145212304x2722542911_21.jpg" />
+    <Content Include="Resources\20091007152251-1715558629.jpg" />
+    <Content Include="Resources\login_bg.jpg" />
+    <Content Include="Resources\main_bg.jpg" />
+    <Content Include="Resources\Nike1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
